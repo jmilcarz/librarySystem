@@ -14,6 +14,6 @@ if (isset($_POST['logoutbtn'])) {
      header('Location: '.$_SERVER['PHP_SELF']);
 }
 
-$loggedin = aith::loggedin();
+$loggedin = auth::loggedin();
 
 $loggedinUserID = DB::query('SELECT id FROM users WHERE id=:id', [':id'=>$loggedin]);
