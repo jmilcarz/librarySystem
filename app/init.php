@@ -4,7 +4,7 @@ require_once("classes/login.php");
 require_once("classes/auth.php");
 $system_name = "Primus Library";
 
-if (!login::loggedin()) {
+if (!auth::loggedin()) {
      require_once('login_again.php');
      exit();
 }
@@ -14,6 +14,6 @@ if (isset($_POST['logoutbtn'])) {
      header('Location: '.$_SERVER['PHP_SELF']);
 }
 
-$loggedin = login::loggedin();
+$loggedin = aith::loggedin();
 
 $loggedinUserID = DB::query('SELECT id FROM users WHERE id=:id', [':id'=>$loggedin]);
