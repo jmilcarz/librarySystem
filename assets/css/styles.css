@@ -54,22 +54,16 @@ a {
       height: 55px;
       align-items: center; }
       #site-nav .container ul.links li#toggledropdown {
-        transition: opacity 200ms linear, transform 10ms linear; }
-      #site-nav .container ul.links li ul.dropdown {
-        position: absolute;
-        background: #fff;
-        padding: 5px;
-        box-sizing: border-box;
-        width: 180px;
-        transform: translateY(-215px);
-        list-style-type: none;
-        opacity: 0;
-        transition: opacity 200ms linear, transform 10ms linear; }
-        #site-nav .container ul.links li ul.dropdown li {
-          padding: 2px 0; }
-      #site-nav .container ul.links li#toggledropdown:hover > ul.dropdown {
-        opacity: 1;
-        transform: translateY(15px); }
+        cursor: pointer; }
+        #site-nav .container ul.links li#toggledropdown ul.dropdown {
+          position: absolute;
+          background: #fff;
+          padding: 5px;
+          box-sizing: border-box;
+          width: 180px;
+          list-style-type: none; }
+          #site-nav .container ul.links li#toggledropdown ul.dropdown li {
+            padding: 2px 0; }
       #site-nav .container ul.links li a, #site-nav .container ul.links li button {
         background: none;
         border: none;

@@ -7,9 +7,9 @@
                <li><a href=""><i class="fa fa-plus"></i> wypożycz książkę</a></li>
                <li><a href=""><i class="fa fa-undo"></i> zwróć książkę</a></li>
                <li id="toggledropdown">więcej <i class="fa fa-caret-down"></i>
-                    <ul class="dropdown">
+                    <ul class="dropdown" id="navdropdownmenu">
                          <li><a href=""><i class="fa fa-plus"></i> dodaj książkę</a></li>
-                         <li><a href=""><i class="fa fa-database"></i> baza książek</a></li>
+                         <li><a href="all-books.php"><i class="fa fa-database"></i> baza książek</a></li>
                          <li><a href=""><i class="fa fa-graduation-cap"></i> baza uczni</a></li>
                          <li><a href=""><i class="fa fa-cogs"></i> ustawienia</a></li>
                     </ul>
@@ -41,3 +41,5 @@
           </div>
      </div>
 </nav>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="assets/js/functions.js"></script>
